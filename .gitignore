@@ -1,0 +1,9 @@
+# Des commentaires
+## On ignore tout ce qu'il y a dans node_modules/
+node_modules/
+
+# Trucs de gestionnaires de paquets alakon
+*lock
+
+# Générés automatiquement
+public/
