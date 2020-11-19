@@ -3,7 +3,4 @@
 node_modules/
 
 # Trucs de gestionnaires de paquets alakon
-*lock
-
-# Générés automatiquement
-public/
+*lock*
