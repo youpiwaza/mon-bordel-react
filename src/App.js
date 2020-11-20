@@ -3,6 +3,7 @@ import './App.css';
 import Welcome from './components/3composEtClasses/Welcome';
 import WelcomeClass from './components/3composEtClasses/WelcomeClass';
 import Comment from './components/3composEtClasses/Comment/Comment';
+import Clock from './components/4etatEtCycleDeVie/Clock';
 
 const commentData = {
   date: new Date(),
@@ -29,6 +30,10 @@ function App() {
           text={commentData.text}
           author={commentData.author}
         />
+
+        <h3>État et cycle de vie</h3>
+        <p>Le <a href="https://fr.reactjs.org/docs/state-and-lifecycle.html" target="blank">lien vers la doc</a></p>
+        <Clock />
       </header>
     </div>
   );
