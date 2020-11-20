@@ -40,11 +40,10 @@ class Clock extends React.Component {
   render() {
     return (
       <div>
-        <h1>Bonjour, monde !</h1>
         {/* Sans state, booh */}
         {/* <h2>Il est {this.date.toLocaleTimeString()}.</h2> */}
         {/* Avec state, yay */}
-        <h2>Il est {this.state.date.toLocaleTimeString()}.</h2>
+        <h3>Il est {this.state.date.toLocaleTimeString()} ⏰.</h3>
       </div>
     );
   }
