@@ -2,6 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/3composEtClasses/Welcome';
 import WelcomeClass from './components/3composEtClasses/WelcomeClass';
+import Comment from './components/3composEtClasses/Comment/Comment';
+
+const commentData = {
+  date: new Date(),
+  text: 'I hope you enjoy learning React!',
+  author: {
+    name: 'Hello Kitty',
+    avatarUrl: 'https://placekitten.com/g/64/64',
+  },
+};
 
 function App() {
   return (
@@ -14,6 +24,11 @@ function App() {
         <p>Le <a href="https://fr.reactjs.org/docs/components-and-props.html" target="blank">lien vers la doc</a></p>
         <Welcome name="Max" />
         <WelcomeClass name="Max" />
+        <Comment
+          date={commentData.date}
+          text={commentData.text}
+          author={commentData.author}
+        />
       </header>
     </div>
   );
