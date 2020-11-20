@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Welcome from './components/3composEtClasses/Welcome';
-import WelcomeClass from './components/3composEtClasses/WelcomeClass';
-import Comment from './components/3composEtClasses/Comment/Comment';
-import Clock from './components/4etatEtCycleDeVie/Clock';
+import Welcome from './components/4composEtClasses/Welcome';
+import WelcomeClass from './components/4composEtClasses/WelcomeClass';
+import Comment from './components/4composEtClasses/Comment/Comment';
+import Clock from './components/5etatEtCycleDeVie/Clock';
+import Button from './components/6events/Button';
+import Toggle from './components/6events/Toggle';
 
 const commentData = {
   date: new Date(),
@@ -34,6 +36,10 @@ function App() {
         <h3>État et cycle de vie</h3>
         <p>Le <a href="https://fr.reactjs.org/docs/state-and-lifecycle.html" target="blank">lien vers la doc</a></p>
         <Clock />
+
+        <h3>Evénements</h3>
+        <Button />
+        <Toggle />
       </header>
     </div>
   );
