@@ -5,3 +5,6 @@ node_modules/
 # Trucs de gestionnaires de paquets alakon
 *lock*
 !*lock.js
+
+# exclure build (on peut le générer)
+build/
