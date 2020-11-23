@@ -6,6 +6,7 @@ import Comment from './components/4composEtClasses/Comment/Comment';
 import Clock from './components/5etatEtCycleDeVie/Clock';
 import Button from './components/6events/Button';
 import Toggle from './components/6events/Toggle';
+import Greeting  from './components/7affichageConditionnel/Greeting';
 
 const commentData = {
   date: new Date(),
@@ -40,6 +41,11 @@ function App() {
         <h3>Evénements</h3>
         <Button />
         <Toggle />
+
+        <h3>Affichage conditionnel</h3>
+        <p>Compo Greeting non logué :</p><Greeting />
+        <p>Compo Greeting logué :</p><Greeting isLoggedIn={true} />
+        
       </header>
     </div>
   );
